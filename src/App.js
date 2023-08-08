@@ -27,7 +27,7 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/clothes" element={<Index />} />
+            <Route path="/new-this-season" element={<Index />} />
             <Route path="/clothes/new" element={<New />} />
             <Route path="/clothes/:id/edit" element={<Edit />} />
             <Route path="/clothes/:id" element={<Show />} />
