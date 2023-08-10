@@ -59,7 +59,7 @@ export default function NavBar() {
                 </li>
                 <li>
                   <Link className="dropdown-item" to="/clothes/new">
-                    Add New Clothes
+                    Add New ClotheS
                   </Link>
                 </li>
               </ul>
