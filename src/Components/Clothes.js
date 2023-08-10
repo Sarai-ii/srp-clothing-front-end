@@ -22,10 +22,7 @@ export default function Clothes() {
             <table>
             <thead>
                 <tr>
-                    <th>Fav</th>
-                    <th>Songs</th>
-                    <th>Artist</th>
-                    <th>Time</th>
+                    {/* <th>Fav</th> */}
                 </tr>
             </thead>
             <tbody>

@@ -1,5 +1,5 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/fontawesome-svg-core'
+// import { FontAwesomeIcon } from '@fontawesome/fontawesome-svg-core'
 
 
 export default function Footer() {

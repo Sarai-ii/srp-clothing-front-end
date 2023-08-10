@@ -26,7 +26,7 @@ function NewClothing() {
       .post(`${API}/clothing`, newClothes)
       .then(
         () => {
-          navigate(`/clothes`);
+          navigate(`/new-this-season`);
         },
         (error) => console.error(error)
       )
@@ -48,23 +48,24 @@ function NewClothing() {
   };
 
   useEffect(() => {
-    axios.get(`${API}/clothing/${id}`).then(
+    axios.get(`${API}/clothing`).then(
       (response) => setClothes(response.data),
-      (error) => navigate(`/not-found`)
+      () => navigate(`/not-found`)
     );
   }, [id, navigate]);
 
   
   return (
-    <div className="Edit">
+    <div className="New">
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name of Clothing:</label>
         <input
           id="name"
-          value={clothes.name}
           type="text"
-          onChange={handleTextChange}
+          name="name"
+          value={clothes.name}
           placeholder=""
+          onChange={handleTextChange}
           required
         />
         <label htmlFor="category">Category:</label>
@@ -100,7 +101,7 @@ function NewClothing() {
           placeholder=""
           onChange={handleTextChange}
         />
-        <label htmlFor="handwash_only">HandWash Only?:</label>
+        <label htmlFor="handwash_only">HandWash Only:</label>
         <input
           id="handwash_only"
           type="checkbox"
@@ -134,10 +135,9 @@ function NewClothing() {
         />
         <br />
         <input type="submit" />
-
       </form>
       
-      <Link to={`/clothes/${id}`}>
+      <Link to={`/new-this-season`}>
         <button>Nevermind!</button>
       </Link>
     </div>
