@@ -20,3 +20,12 @@ nav {
     box-shadow: 2px 2px 4px rgba(253, 253, 253, 0.669);
     margin-bottom: 1em;
 }
+
+.dropdown-item {
+    color: #445845; /* Set text color */
+}
+
+.dropdown-item:hover {
+    background-color: #e42121; /* Change background color on hover */
+    color: #d92424; /* Change text color on hover */
+  }

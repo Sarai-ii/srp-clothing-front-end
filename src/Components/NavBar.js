@@ -48,7 +48,7 @@ export default function NavBar() {
               </button>
               <ul className={`dropdown-menu dropdown-menu-dark ${isMenuClicked ? "show" : ""}`}>
                 <li>
-                  <Link className="dropdown-item" to="/clothes">
+                  <Link className="dropdown-item" to="/new-this-season">
                     New This Season
                   </Link>
                 </li>
