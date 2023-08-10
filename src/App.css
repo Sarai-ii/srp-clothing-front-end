@@ -1,3 +1,23 @@
+/* App.css (or your custom CSS file) */
+
+body, html {
+  height: 100%; /* Ensure full height of the viewport */
+  margin: 0; /* Reset default margin */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Make sure the content takes at least the viewport height */
+}
+
+main {
+  flex-grow: 1; /* Allow the main content to grow and push the footer down */
+}
+
+
+
+
 /* .App {
   text-align: center;
 }
