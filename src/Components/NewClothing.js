@@ -56,7 +56,7 @@ function NewClothing() {
 
   
   return (
-    <div className="Edit">
+    <div className="New">
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name of Clothing:</label>
         <input
@@ -100,7 +100,7 @@ function NewClothing() {
           placeholder=""
           onChange={handleTextChange}
         />
-        <label htmlFor="handwash_only">HandWash Only?:</label>
+        <label htmlFor="handwash_only">HandWash Only:</label>
         <input
           id="handwash_only"
           type="checkbox"
@@ -137,7 +137,7 @@ function NewClothing() {
 
       </form>
       
-      <Link to={`/clothes/${id}`}>
+      <Link to={`/clothes`}>
         <button>Nevermind!</button>
       </Link>
     </div>
