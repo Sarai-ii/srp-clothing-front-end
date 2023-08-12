@@ -12,6 +12,7 @@ const API = process.env.REACT_APP_API_URL;
 function ClothingDetails() {
 
   const [clothing, setClothing] = useState([]);
+  const [isConfirmationVisible, setIsConfirmationVisible] = useState(false);
   let { id } = useParams();
   let navigate = useNavigate();
 
@@ -29,8 +30,20 @@ function ClothingDetails() {
       .catch((c) => console.error("catch", c));
   };
 
+  const showConfirmationModal = () => {
+    console.log("working modal")
+    setIsConfirmationVisible(true);
+  };
+
+  const hideConfirmationModal = () => {
+    console.log("hiding modal")
+    setIsConfirmationVisible(false);
+  };
+
+
   const handleDelete = () => {
     deleteClothing();
+    hideConfirmationModal();
   };
 
   return (
@@ -53,8 +66,17 @@ function ClothingDetails() {
           <div className="">
             <button
               className="btn btn-outline-secondary button-details "
-              onClick={handleDelete}>Delete
+              onClick={showConfirmationModal}>Delete
             </button>
+            {isConfirmationVisible && (
+               <div className="modal">
+               <div className="modal-content">
+                 <p>Are you sure you want to delete?</p>
+                 <button onClick={handleDelete}>Yes, Delete</button>
+                 <button onClick={hideConfirmationModal}>Cancel</button>
+               </div>
+             </div>
+           )}
           </div>
         </div>
       </article>
