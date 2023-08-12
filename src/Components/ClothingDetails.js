@@ -25,9 +25,9 @@ function ClothingDetails() {
 
   const deleteClothing = () => {
     axios
-      .delete(`${API}/clothing/${id}`)
-      .then(() => navigate(`/new-this-season`))
-      .catch((c) => console.error("catch", c));
+    .delete(`${API}/clothing/${id}`)
+    .then(() => navigate(`/new-this-season`))
+    .catch((c) => console.error("catch", c));
   };
 
   const showConfirmationModal = () => {
@@ -39,7 +39,6 @@ function ClothingDetails() {
     console.log("hiding modal")
     setIsConfirmationVisible(false);
   };
-
 
   const handleDelete = () => {
     deleteClothing();
@@ -70,11 +69,11 @@ function ClothingDetails() {
             </button>
             {isConfirmationVisible && (
                <div className="modal">
-               <div className="modal-content">
-                 <p>Are you sure you want to delete?</p>
-                 <button onClick={handleDelete}>Yes, Delete</button>
-                 <button onClick={hideConfirmationModal}>Cancel</button>
-               </div>
+                <div className="modal-content">
+                  <p>Are you sure you want to delete?</p>
+                  <button onClick={handleDelete}>Yes, Delete</button>
+                  <button onClick={hideConfirmationModal}>Cancel</button>
+                </div>
              </div>
            )}
           </div>

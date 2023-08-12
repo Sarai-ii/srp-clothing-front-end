@@ -35,7 +35,6 @@ function App() {
             <Route path="/clothes/:id/edit" element={<Edit />} />
             <Route path="/clothes/:id" element={<Show />} />
             <Route path="*" element={<FourOFour />} />
-
           </Routes>
         </main>
         <Footer />
