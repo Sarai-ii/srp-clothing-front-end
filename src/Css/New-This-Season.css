@@ -1,0 +1,14 @@
+.main-container {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: flex;
+}
+.main-section {
+    flex: 1;
+    margin-left: 0px; /* Adjust the spacing between the sidebar and content */
+    margin-top: 23px;
+}
+.section {
+    flex: .15;
+    margin: 20px;
+}

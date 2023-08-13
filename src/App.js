@@ -17,6 +17,7 @@ import Show from "./Pages/Show"
 //COMPONENTS
 import NavBar from "./Components/NavBar"
 import Footer from "./Components/Footer"
+import Images from "./Components/Images"
 // import CollapsibleSidebar from './Components/Sidebar';
 
 
@@ -30,6 +31,7 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/new-this-season/:id/images" element={<Images />} />
             <Route path="/new-this-season" element={<Index />} />
             <Route path="/clothes/new" element={<New />} />
             <Route path="/clothes/:id/edit" element={<Edit />} />

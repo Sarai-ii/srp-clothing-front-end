@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://localhost:3000/clothes/1 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!-- BOOTSTRAP LINK -->
+    <link href="./React App_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <script defer="" src="./React App_files/bundle.js"></script><style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* 
+
+table {
+  width: 50%;
+  margin: auto;
+}
+
+td {
+  text-align: center;
+}
+
+tbody td:not(td:first-of-type):hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+tbody tr:nth-child(even) {
+  background: #f4eafd;
+} 
+
+*/
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxTQUFTO0VBQ1Q7O2NBRVk7RUFDWixtQ0FBbUM7RUFDbkMsa0NBQWtDO0FBQ3BDOztBQUVBO0VBQ0U7YUFDVztBQUNiOztBQUVBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7OztDQW9CQyIsInNvdXJjZXNDb250ZW50IjpbImJvZHkge1xuICBtYXJnaW46IDA7XG4gIGZvbnQtZmFtaWx5OiAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsICdSb2JvdG8nLCAnT3h5Z2VuJyxcbiAgICAnVWJ1bnR1JywgJ0NhbnRhcmVsbCcsICdGaXJhIFNhbnMnLCAnRHJvaWQgU2FucycsICdIZWx2ZXRpY2EgTmV1ZScsXG4gICAgc2Fucy1zZXJpZjtcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XG4gIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG59XG5cbmNvZGUge1xuICBmb250LWZhbWlseTogc291cmNlLWNvZGUtcHJvLCBNZW5sbywgTW9uYWNvLCBDb25zb2xhcywgJ0NvdXJpZXIgTmV3JyxcbiAgICBtb25vc3BhY2U7XG59XG5cbi8qIFxuXG50YWJsZSB7XG4gIHdpZHRoOiA1MCU7XG4gIG1hcmdpbjogYXV0bztcbn1cblxudGQge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbnRib2R5IHRkOm5vdCh0ZDpmaXJzdC1vZi10eXBlKTpob3ZlciB7XG4gIHRyYW5zZm9ybTogc2NhbGUoMS4wNSk7XG4gIG9wYWNpdHk6IDAuOTtcbn1cblxudGJvZHkgdHI6bnRoLWNoaWxkKGV2ZW4pIHtcbiAgYmFja2dyb3VuZDogI2Y0ZWFmZDtcbn0gXG5cbiovIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>/* Sidebar styles */
+.sidebar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 80px;
+    left: -250px;
+    background-color: #333;
+    color: white;
+    transition: left 0.3s ease;
+    z-index: 1000; /* Ensure the sidebar is above other content */
+  }
+  
+  .sidebar.open {
+    left: 0;
+  }
+  
+  .sidebar-content {
+    padding: 10px;
+    margin-top: 60px; /* Adjust the top margin to go under the navbar */
+    height: calc(100% - 60px); /* Calculate the height to fill the remaining space */
+    overflow-y: auto; /* Add scrollbar when content overflows */
+  }
+  
+  /* Toggle button styles */
+  .sidebar-toggle {
+    position: fixed;
+    top: 80px;
+    left: 20px;
+    cursor: pointer;
+  }
+  
+  .dropdown-menus > li,
+  ul{
+    list-style: none;
+    cursor:pointer;
+  }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9Dc3MvU2lkZWJhci5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsbUJBQW1CO0FBQ25CO0lBQ0ksWUFBWTtJQUNaLFlBQVk7SUFDWixlQUFlO0lBQ2YsU0FBUztJQUNULFlBQVk7SUFDWixzQkFBc0I7SUFDdEIsWUFBWTtJQUNaLDBCQUEwQjtJQUMxQixhQUFhLEVBQUUsOENBQThDO0VBQy9EOztFQUVBO0lBQ0UsT0FBTztFQUNUOztFQUVBO0lBQ0UsYUFBYTtJQUNiLGdCQUFnQixFQUFFLGlEQUFpRDtJQUNuRSx5QkFBeUIsRUFBRSxxREFBcUQ7SUFDaEYsZ0JBQWdCLEVBQUUseUNBQXlDO0VBQzdEOztFQUVBLHlCQUF5QjtFQUN6QjtJQUNFLGVBQWU7SUFDZixTQUFTO0lBQ1QsVUFBVTtJQUNWLGVBQWU7RUFDakI7O0VBRUE7O0lBRUUsZ0JBQWdCO0lBQ2hCLGNBQWM7RUFDaEIiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBTaWRlYmFyIHN0eWxlcyAqL1xuLnNpZGViYXIge1xuICAgIHdpZHRoOiAyNTBweDtcbiAgICBoZWlnaHQ6IDEwMCU7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogODBweDtcbiAgICBsZWZ0OiAtMjUwcHg7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzMzMztcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgdHJhbnNpdGlvbjogbGVmdCAwLjNzIGVhc2U7XG4gICAgei1pbmRleDogMTAwMDsgLyogRW5zdXJlIHRoZSBzaWRlYmFyIGlzIGFib3ZlIG90aGVyIGNvbnRlbnQgKi9cbiAgfVxuICBcbiAgLnNpZGViYXIub3BlbiB7XG4gICAgbGVmdDogMDtcbiAgfVxuICBcbiAgLnNpZGViYXItY29udGVudCB7XG4gICAgcGFkZGluZzogMTBweDtcbiAgICBtYXJnaW4tdG9wOiA2MHB4OyAvKiBBZGp1c3QgdGhlIHRvcCBtYXJnaW4gdG8gZ28gdW5kZXIgdGhlIG5hdmJhciAqL1xuICAgIGhlaWdodDogY2FsYygxMDAlIC0gNjBweCk7IC8qIENhbGN1bGF0ZSB0aGUgaGVpZ2h0IHRvIGZpbGwgdGhlIHJlbWFpbmluZyBzcGFjZSAqL1xuICAgIG92ZXJmbG93LXk6IGF1dG87IC8qIEFkZCBzY3JvbGxiYXIgd2hlbiBjb250ZW50IG92ZXJmbG93cyAqL1xuICB9XG4gIFxuICAvKiBUb2dnbGUgYnV0dG9uIHN0eWxlcyAqL1xuICAuc2lkZWJhci10b2dnbGUge1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDgwcHg7XG4gICAgbGVmdDogMjBweDtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gIH1cbiAgXG4gIC5kcm9wZG93bi1tZW51cyA+IGxpLFxuICB1bHtcbiAgICBsaXN0LXN0eWxlOiBub25lO1xuICAgIGN1cnNvcjpwb2ludGVyO1xuICB9Il0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.main-container {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: flex;
+}
+.main-section {
+    flex: 1 1;
+    margin-left: 0px; /* Adjust the spacing between the sidebar and content */
+    margin-top: 23px;
+}
+.section {
+    flex: .15 1;
+    margin: 20px;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9Dc3MvTmV3LVRoaXMtU2Vhc29uLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGFBQWE7SUFDYiw0QkFBNEI7SUFDNUIscUJBQXFCO0FBQ3pCO0FBQ0E7SUFDSSxTQUFPO0lBQ1AsZ0JBQWdCLEVBQUUsdURBQXVEO0lBQ3pFLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksV0FBUztJQUNULFlBQVk7QUFDaEIiLCJzb3VyY2VzQ29udGVudCI6WyIubWFpbi1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgLyogZmxleC1kaXJlY3Rpb246IGNvbHVtbjsgKi9cbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGZsZXg7XG59XG4ubWFpbi1zZWN0aW9uIHtcbiAgICBmbGV4OiAxO1xuICAgIG1hcmdpbi1sZWZ0OiAwcHg7IC8qIEFkanVzdCB0aGUgc3BhY2luZyBiZXR3ZWVuIHRoZSBzaWRlYmFyIGFuZCBjb250ZW50ICovXG4gICAgbWFyZ2luLXRvcDogMjNweDtcbn1cbi5zZWN0aW9uIHtcbiAgICBmbGV4OiAuMTU7XG4gICAgbWFyZ2luOiAyMHB4O1xufSJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>body {
+    background-color: rgb(0, 0, 4);
+    color: whitesmoke;
+}
+
+.card-details {
+    align-items: center;
+    border: 2px solid;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+}
+
+.button-details{
+    border-color:rgb(0, 0, 4);
+    color: aliceblue;
+    margin: 10px;
+}
+
+.modal {
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.584);
+    display:flex;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.modal-content {
+    background-color: rgb(110, 116, 86);
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+}
+
+.modal button {
+    background-color: black;
+    border-radius: 100px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin: 5px;
+    padding: 3px;
+    text-align: center;
+    /* width: 10px; */
+}
+
+.modal button:hover {
+    width: 200px;
+}
+
+.modal p {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin: 5px;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9Dc3MvU2hvdy5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSw4QkFBOEI7SUFDOUIsaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksbUJBQW1CO0lBQ25CLGlCQUFpQjtJQUNqQixZQUFZO0lBQ1osWUFBWTtJQUNaLGFBQWE7QUFDakI7O0FBRUE7SUFDSSx5QkFBeUI7SUFDekIsZ0JBQWdCO0lBQ2hCLFlBQVk7QUFDaEI7O0FBRUE7SUFDSSxxQkFBcUI7SUFDckIsc0NBQXNDO0lBQ3RDLFlBQVk7SUFDWixZQUFZO0lBQ1osZUFBZTtJQUNmLE1BQU07SUFDTixPQUFPO0lBQ1AsV0FBVztBQUNmOztBQUVBO0lBQ0ksbUNBQW1DO0lBQ25DLGFBQWE7SUFDYixrQkFBa0I7SUFDbEIsU0FBUztJQUNULGtCQUFrQjtJQUNsQixRQUFRO0lBQ1IsZ0NBQWdDO0lBQ2hDLFlBQVk7QUFDaEI7O0FBRUE7SUFDSSx1QkFBdUI7SUFDdkIsb0JBQW9CO0lBQ3BCLHlCQUF5QjtJQUN6QixpQkFBaUI7SUFDakIsV0FBVztJQUNYLFlBQVk7SUFDWixrQkFBa0I7SUFDbEIsaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksWUFBWTtBQUNoQjs7QUFFQTtJQUNJLHlCQUF5QjtJQUN6QixpQkFBaUI7SUFDakIsV0FBVztBQUNmIiwic291cmNlc0NvbnRlbnQiOlsiYm9keSB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDAsIDAsIDQpO1xuICAgIGNvbG9yOiB3aGl0ZXNtb2tlO1xufVxuXG4uY2FyZC1kZXRhaWxzIHtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGJvcmRlcjogMnB4IHNvbGlkO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBtYXJnaW46IDIwcHg7XG4gICAgcGFkZGluZzogMTBweDtcbn1cblxuLmJ1dHRvbi1kZXRhaWxze1xuICAgIGJvcmRlci1jb2xvcjpyZ2IoMCwgMCwgNCk7XG4gICAgY29sb3I6IGFsaWNlYmx1ZTtcbiAgICBtYXJnaW46IDEwcHg7XG59XG5cbi5tb2RhbCB7XG4gICAgYWxpZ24tY29udGVudDogY2VudGVyO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC41ODQpO1xuICAgIGRpc3BsYXk6ZmxleDtcbiAgICBoZWlnaHQ6IDEwMCU7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogMDtcbiAgICBsZWZ0OiAwO1xuICAgIHdpZHRoOiAxMDAlO1xufVxuXG4ubW9kYWwtY29udGVudCB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDExMCwgMTE2LCA4Nik7XG4gICAgcGFkZGluZzogMjBweDtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgbGVmdDogNTAlO1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICB0b3A6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICB3aWR0aDogMzAwcHg7XG59XG5cbi5tb2RhbCBidXR0b24ge1xuICAgIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xuICAgIGJvcmRlci1yYWRpdXM6IDEwMHB4O1xuICAgIGNvbG9yOiByZ2IoMjU1LCAyNTUsIDI1NSk7XG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gICAgbWFyZ2luOiA1cHg7XG4gICAgcGFkZGluZzogM3B4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICAvKiB3aWR0aDogMTBweDsgKi9cbn1cblxuLm1vZGFsIGJ1dHRvbjpob3ZlciB7XG4gICAgd2lkdGg6IDIwMHB4O1xufVxuXG4ubW9kYWwgcCB7XG4gICAgY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KTtcbiAgICBmb250LXdlaWdodDogYm9sZDtcbiAgICBtYXJnaW46IDVweDtcbn0iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>p {
+        margin-top: -10px !important;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9Db21wb25lbnRzL0Zvb3Rlci5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7UUFDUSw0QkFBNEI7QUFDcEMiLCJzb3VyY2VzQ29udGVudCI6WyJwIHtcbiAgICAgICAgbWFyZ2luLXRvcDogLTEwcHggIWltcG9ydGFudDtcbn0iXSwic291cmNlUm9vdCI6IiJ9 */</style></head>
+  <body>
+     <!-- BOOTSTRAP SCRIPT TAGS FOR POPOVERS AND DROPDOWNS (MAY REMOVE TO SPEED UP BROWSER) -->
+     <script src="./React App_files/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+     <script src="./React App_files/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+     <script src="./React App_files/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+     <!-- Add these script tags in your HTML For DropDowns -->
+    <script src="./React App_files/react.development.js"></script>
+    <script src="./React App_files/react-dom.development.js"></script>
+    <script src="./React App_files/bootstrap.bundle.min(1).js"></script>
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="App"><nav class="navbar navbar-light bg-light"><div class="container-fluid"><a class="navbar-brand nav-header" href="http://localhost:3000/">SEN</a><input type="search" name="search"><svg width="26" height="19" fill="BLACK" class="bi bi-search search-icon" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path></svg><button class="navbar-toggler" type="button"><span class="navbar-toggler-icon"></span>Menu</button><div class="collapse navbar-collapse 
+                " id="navbarNavDarkDropdown"><ul class="navbar-nav"><li class="nav-item dropdown"><button class="btn btn-dark dropdown-toggle">Categories</button><ul class="dropdown-menu "><li><a class="dropdown-item" href="http://localhost:3000/new-this-season">New This Season</a></li><li><a class="dropdown-item" href="http://localhost:3000/clothes">Women</a></li><li><a class="dropdown-item" href="http://localhost:3000/clothes/new">Add New Clothes</a></li></ul></li></ul></div></div></nav><main><div class="Show"><h2>Show</h2><div class=""><article class="card card-details text-center bg-dark grey "><h4>Floral top</h4><h6>$25.00</h6><div class="showNavigation"><div class=""> <a href="http://localhost:3000/new-this-season"><button class="btn btn-outline-secondary button-details">Back</button></a></div><div><a href="http://localhost:3000/clothes/1/edit"><button class="btn btn-outline-secondary button-details">Edit</button></a></div><div class=""><button class="btn btn-outline-secondary button-details ">Delete</button></div></div></article></div></div></main><div class="Footer container"><footer class="text-center text-lg-start text-dark" style="background-color: rgb(236, 239, 241);"><section class="d-flex justify-content-between p-3 text-purple mt-4" style="background-color: rgb(33, 209, 146);"><div class="me-5">  <a href="https://github.com/Sarai-ii" class="text-black m-4"><i class="">Github: Sarai Thomas</i></a><a href="https://github.com/JenniferEinstein" class="text-black me-4"><i class="">Github: Jennifer Einstein</i></a></div></section><section class="Links"><div class="container text-center text-md-start mt-2"><div class="row mt-3"><div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-2">  <h6 class="text-uppercase fw-bold mb-2">Extravaganza</h6><hr class="mt-0 d-inline-block mx-auto" style="background-color: rgb(124, 77, 255); width: 60px; height: 2px;"><p> The shopping experience you deserve </p></div><div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-2"> <h6 class="text-uppercase fw-bold mb-2">Categories</h6><hr class="mt-0 d-inline-block mx-auto" style="background-color: rgb(124, 77, 255); width: 60px; height: 2px;"><p><a href="http://localhost:3000/clothes/1#!" class="text-dark">Women</a></p><p><a href="http://localhost:3000/clothes/1#!" class="text-dark">Men</a></p><p><a href="http://localhost:3000/clothes/1#!" class="text-dark">Accessories</a></p></div><div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-2"> <h6 class="text-uppercase fw-bold mb-2">Useful Links</h6><hr class=" mt-0 d-inline-block mx-auto" style="background-color: rgb(124, 77, 255); width: 60px; height: 2px;"><p><a href="http://localhost:3000/clothes/1#!" class="text-dark">Your Account</a></p><p><a href="http://localhost:3000/clothes/1#!" class="text-dark">Shipping Rates</a></p><p><a href="http://localhost:3000/clothes/1#!" class="text-dark">Help</a></p></div><div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-2"> <h6 class="text-uppercase fw-bold mb-2">Contact</h6><hr class="mt-0 d-inline-block mx-auto" style="background-color: rgb(124, 77, 255); width: 60px; height: 2px;"><p><i class="mr-3"></i> info@example.com</p></div></div></div></section></footer><div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); margin-top: auto;">© 2023 Copyright: Clothing App Single Resource Project</div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  
+
+</body></html>
