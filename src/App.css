@@ -1,6 +1,5 @@
-/* App.css (or your custom CSS file) */
-
-body, html {
+body {
+  font-family: Oswald;
   height: 100%; /* Ensure full height of the viewport */
   margin: 0; /* Reset default margin */
 }
@@ -14,6 +13,7 @@ body, html {
 main {
   flex-grow: 1; /* Allow the main content to grow and push the footer down */
 }
+
 
 
 

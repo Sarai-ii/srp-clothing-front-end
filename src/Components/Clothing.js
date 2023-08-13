@@ -10,7 +10,10 @@ export default function Clothing({ clothes }) {
         <img src="../Photos/ankle-boots.jpg" className="card-img-top" alt="Item"/>
         <Link to={`/clothes/${clothes.clothing_id}`}>{clothes.name}</Link>
         <div className="card-body">
-          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p className="card-text">
+            
+          <Link to={`/clothes/${clothes.clothing_id}`}>{clothes.price}</Link>          
+          </p>
         </div>
       </main>
     </div>
