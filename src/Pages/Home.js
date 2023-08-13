@@ -1,22 +1,16 @@
 import { useNavigate } from "react-router-dom"
 import React from "react";
+import '../Css/Home.css';
+import loafers from '../Photos/cool-loafer-details.png';
+import dress from '../Photos/sundress-white.jpg';
+import fedora from '../Photos/fedora.png';
+import pinkTop from '../Photos/pink-top-spaghetti-straps.jpg';
 
-import '../Css/Home.css'
 
 
 export default function Home() {
     const navigate = useNavigate();
-    // const fullScreenImage = {
-    //     backgroundImage: `url(${photo})`,
-    //     backgroundSize: 'cover',
-    //     backgroundPosition: 'center',
-    //     height: '100vh',
-    //     display: 'flex',
-    //     flexDirection: 'column',  // this makes the buttons vertical
-    //     justifyContent: 'center',
-    //     alignItems: 'flex-start',  //moves buttons to the left
-    //     fontFamily: "'Bastia',Helvetica,sans-serif",
-    //   };
+
 
       const headingStyle = {
         color: 'rgb(33, 209, 146)',
@@ -24,7 +18,10 @@ export default function Home() {
         top: '1%',
         left: '4%',
         fontSize: '48px',
-        marginBottom: '20px'
+        marginBottom: '20px',
+        display: 'block',
+        alignItems: "center",
+        justifyContent: "center",
       };
 
       const buttonStyle = {
@@ -62,26 +59,23 @@ export default function Home() {
         width: '100%',
       }
 
-      const styleA = {
-        left: '0',
-        top: '0',
+      const bonusStyle = {
+        left: '100px',
+        top: '30px',
+        marginBottom: '40px',
         position: 'relative',
         zIndex: '5',
         fontColor: 'black;',
-        fontSize: '12px',
+        fontSize: '16px',
       }
 
-      const styleB = {
-        backgroundColor: '#000000',
-        justifyContent: 'center',
-      }
+
+      const handleImageClick = (itemId) => {
+        navigate(`/clothes/${itemId}`);
+      };      
 
     return (
         <div className="Home">
-
-<section className="vYF33 nrGtK" style={styleA}>
-                <span className="TFM6u"><p><strong>Get a $40 Bonus Note!</strong> A new-cardmember exclusive. Restrictions apply. </p></span></section>
-
             <main id="layer-0" className="vYF33" style={mainStyle}>
              <h2 style={headingStyle}>Welcome to Extravaganza!</h2>
                 <button className='all-items-btn' style={buttonStyle} onClick = {() => navigate("/clothing")}>
@@ -119,7 +113,7 @@ export default function Home() {
                     <section class="XaJP8">
                         <div class="RY6IU">
                             <div class="PiUHT fBKre gP_Yo JDS6c rie47" style={styleThree}>
-                                <div class="udmGE cSeCo wHJLP L1fU8"><p>Save on the best. </p>
+                                <div class="udmGE cSeCo wHJLP L1fU8"><p>Spend on the best. </p>
                                 </div>
                             </div>
                         </div>
@@ -135,15 +129,43 @@ export default function Home() {
                                     <p><strong>TRENDING NOW</strong></p>
                                 </h4>
                             </div>
-
+                            <div className="trending-pictures trending-images">
+                                <div className="trending-image-container">
+                                    <img 
+                                        src={loafers} 
+                                        alt="closeup of feet of man wearing stylish brown loafers" 
+                                        className="thumbnail-image"
+                                        onClick={()=> handleImageClick(23)} 
+                                        />
+                                    <img 
+                                        src={dress} 
+                                        alt="barefoot woman in white dress walking along the beach" 
+                                        className="thumbnail-image"
+                                        onClick={()=> handleImageClick(25)} 
+                                        />
+                                    <img 
+                                        src={fedora} 
+                                        alt="snazzy neutral fedora on white background" className="thumbnail-image" 
+                                        onClick={()=> handleImageClick(21)} 
+                                    />
+                                    <img 
+                                        src={pinkTop} 
+                                        alt="woman in pink top with deep pink embroidery sitting on couch" 
+                                        className="thumbnail-image" 
+                                        onClick={()=> handleImageClick()} 
+                                    />
+                                </div>
+                            </div>
                         </div>
-                    </section>
-                </div>
+                        </section>
+                        <section className="vYF33 nrGtK" style={bonusStyle}>
+                <span className="TFM6u"><p><strong>Get a $40 Bonus Note!</strong> A new-cardmember exclusive. Restrictions apply. </p></span></section>
+                    </div>
 
-            </div>
+                </div>
             </section>
-</main> 
-            </div>
+            </main> 
+        </div>
     )
 }
 
@@ -152,6 +174,19 @@ export default function Home() {
             
 
 // import photo from '../Photos/JapaneseMaple.jpg'
+
+    // const fullScreenImage = {
+    //     backgroundImage: `url(${photo})`,
+    //     backgroundSize: 'cover',
+    //     backgroundPosition: 'center',
+    //     height: '100vh',
+    //     display: 'flex',
+    //     flexDirection: 'column',  // this makes the buttons vertical
+    //     justifyContent: 'center',
+    //     alignItems: 'flex-start',  //moves buttons to the left
+    //     fontFamily: "'Bastia',Helvetica,sans-serif",
+    //   };
+
 
 <a className="BK8bF OfW5X" href="#main-content-start">Skip navigation</a>
 <div style={fullScreenImage}>
