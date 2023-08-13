@@ -9,6 +9,6 @@
     margin-top: 23px;
 }
 .section {
-    flex: .15;
-    margin: 20px;
+    flex: .25;
+    /* margin: 20px; */
 }

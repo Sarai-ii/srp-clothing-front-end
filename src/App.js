@@ -4,7 +4,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 //STYLING
-// import './App.css';
+import './App.css';
 
 //PAGES
 import Edit from "./Pages/Edit"

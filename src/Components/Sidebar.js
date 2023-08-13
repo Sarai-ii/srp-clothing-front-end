@@ -63,13 +63,19 @@ export default function ToggleableSidebar(clothing) {
       <div className="sidebar-content">
         {/* Sidebar content */}
         <ul className="dropdown-menus">
-            <li onClick={toggleDropdown}>Price</li>
+            {/* <span style={{fontSize: "100px"}}>&#8675;</span> */}
+            <li onClick={toggleDropdown}>Price 
+                <svg xmlns="" width="16" height="16" fill="currentColor" className="bi bi-caret-down-fill arrow" viewBox="0 0 16 16">
+                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                </svg> 
+            </li>
                 {showDropdownPrice && (
                     <div className="price-dropdown">
                         <ul>
                             <li>
                                 <input
                                     type="checkbox"
+                                    id="checkbox"
                                     checked={priceRange.min === 0}
                                     onChange={handlePriceRangeChange}
                                     name="min"
@@ -80,6 +86,7 @@ export default function ToggleableSidebar(clothing) {
                             <li>
                                 <input
                                 type="checkbox"
+                                id="checkbox"
                                 checked={priceRange.min === 50}
                                 onChange={handlePriceRangeChange}
                                 name="min"
@@ -90,6 +97,7 @@ export default function ToggleableSidebar(clothing) {
                             <li>
                                 <input
                                 type="checkbox"
+                                id="checkbox"
                                 checked={priceRange.min === 100}
                                 onChange={handlePriceRangeChange}
                                 name="min"
@@ -100,6 +108,7 @@ export default function ToggleableSidebar(clothing) {
                             <li>
                                 <input
                                 type="checkbox"
+                                id="checkbox"
                                 checked={priceRange.min === 200}
                                 onChange={handlePriceRangeChange}
                                 name="min"
@@ -110,6 +119,7 @@ export default function ToggleableSidebar(clothing) {
                             <li>
                                 <input
                                 type="checkbox"
+                                id="checkbox"
                                 checked={priceRange.min === 400}
                                 onChange={handlePriceRangeChange}
                                 name="min"
@@ -120,6 +130,7 @@ export default function ToggleableSidebar(clothing) {
                             <li>
                                 <input
                                 type="checkbox"
+                                id="checkbox"
                                 checked={priceRange.min === 600}
                                 onChange={handlePriceRangeChange}
                                 name="min"
@@ -130,6 +141,7 @@ export default function ToggleableSidebar(clothing) {
                             <li>
                                 <input
                                 type="checkbox"
+                                id="checkbox"
                                 checked={priceRange.min === 800}
                                 onChange={handlePriceRangeChange}
                                 name="min"
@@ -140,146 +152,177 @@ export default function ToggleableSidebar(clothing) {
                         </ul>
                     </div>
                 )}
-            <li onClick={toggleMaterials}>Material</li>
+            <li onClick={toggleMaterials}>Material 
+                <svg xmlns="" width="16" height="16" fill="currentColor" className="bi bi-caret-down-fill arrow" viewBox="0 0 16 16">
+                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                </svg> 
+            </li>
                 {showMaterials && (
                     <div className="materials-dropdown">
                         <ul>
                             <li>
                                 <input
                                 type="checkbox"
+                                id="checkbox"
                                 />
                                 Cotton
                             </li>
                             <li>
                                 <input
                                 type="checkbox"
+                                id="checkbox"
                                 />
                                 Denim
                             </li>
                             <li>
                                 <input
                                 type="checkbox"
+                                id="checkbox"
                                 />
                                 Gold-Plated
                             </li>
                             <li>
                                 <input
                                 type="checkbox"
+                                id="checkbox"
                                 />
                                 Leather
                             </li>
                             <li>
                                 <input
                                 type="checkbox"
+                                id="checkbox"
                                 />
                                 Linen
                             </li>
                             <li>
                                 <input
                                 type="checkbox"
+                                id="checkbox"
                                 />
                                 Metal
                             </li>
                             <li>
                                 <input
                                 type="checkbox"
+                                id="checkbox"
                                 />
                                 Nubuck
                             </li>
                             <li>
                                 <input
                                 type="checkbox"
+                                id="checkbox"
                                 />
                                 Polyester
                             </li>
                             <li>
                                 <input
                                 type="checkbox"
+                                id="checkbox"
                                 />
                                 Rayon
                             </li>
                             <li>
                                 <input
                                 type="checkbox"
+                                id="checkbox"
                                 />
                                 Rubber
                             </li>
                             <li>
                                 <input
                                 type="checkbox"
+                                id="checkbox"
                                 />
                                 Shellac
                             </li>
                             <li>
                                 <input
                                 type="checkbox"
+                                id="checkbox"
                                 />
                                 Silk
                             </li>
                             <li>
                                 <input
                                 type="checkbox"
+                                id="checkbox"
                                 />
                                 Suede
                             </li>
                             <li>
                                 <input
                                 type="checkbox"
+                                id="checkbox"
                                 />
                                 Synthetic Leather
                             </li>
                         </ul>
                     </div>
                 )}
-            <li onClick={toggleProductType}>Product Type</li>
+            <li onClick={toggleProductType}>Product Type
+                <svg xmlns="" width="16" height="16" fill="currentColor" className="bi bi-caret-down-fill arrow" viewBox="0 0 16 16">
+                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                </svg> 
+            </li>
                 {showProductType && (
                     <div className="dropdown">
                         <ul>
                             <li>
                                 <input
                                 type="checkbox"
+                                id="checkbox"
+                                
                                 />
                                 Accessories
                             </li>
                             <li>
                                 <input
                                 type="checkbox"
+                                id="checkbox"
                                 />
                                 Belts
                             </li>
                             <li>
                                 <input
                                 type="checkbox"
+                                id="checkbox"
                                 />
                                 Bottoms
                             </li>
                             <li>
                                 <input
                                 type="checkbox"
+                                id="checkbox"
                                 />
                                 Dresses
                             </li>
                             <li>
                                 <input
                                 type="checkbox"
+                                id="checkbox"
                                 />
                                 Hats
                             </li>
                             <li>
                                 <input
                                 type="checkbox"
+                                id="checkbox"
                                 />
                                 Shoes
                             </li>
                             <li>
                                 <input
                                 type="checkbox"
+                                id="checkbox"
                                 />
                                 Socks
                             </li>
                             <li>
                                 <input
                                 type="checkbox"
+                                id="checkbox"
                                 />
                                 Tops
                             </li>
