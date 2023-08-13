@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 // import Images from "./Images";
 
-export default function Clothing({ clothes, images }) {
+export default function Clothing({ clothes }) {
   console.log(clothes.clothing_id)
-  console.log(images)
+  // console.log(images)
   return (
     <div>
       <main className="card">

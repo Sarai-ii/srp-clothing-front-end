@@ -1,37 +1,48 @@
 /* Sidebar styles */
+
 .sidebar {
-    width: 250px;
-    height: 100%;
-    position: fixed;
-    top: 80px;
-    left: -250px;
-    background-color: #333;
-    color: white;
-    transition: left 0.3s ease;
-    z-index: 1000; /* Ensure the sidebar is above other content */
-  }
+  background-color: #efebeb;
+  color: rgb(0, 0, 0);
+  height: 100%;
+  left: -250px;
+  position: fixed;
+  top: 80px;
+  transition: left 0.3s ease;
+  width: 250px;
+  z-index: 1000; /* Ensure the sidebar is above other content */
+}
   
-  .sidebar.open {
-    left: 0;
-  }
-  
-  .sidebar-content {
-    padding: 10px;
-    margin-top: 60px; /* Adjust the top margin to go under the navbar */
-    height: calc(100% - 60px); /* Calculate the height to fill the remaining space */
-    overflow-y: auto; /* Add scrollbar when content overflows */
-  }
-  
-  /* Toggle button styles */
-  .sidebar-toggle {
-    position: fixed;
-    top: 80px;
-    left: 20px;
-    cursor: pointer;
-  }
-  
-  .dropdown-menus > li,
-  ul{
-    list-style: none;
-    cursor:pointer;
-  }
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar-content {
+  height: calc(100% - 60px); /* Calculate the height to fill the remaining space */
+  margin-top: 30px; /* Adjust the top margin to go under the navbar */
+  padding: 2px;
+  overflow-y: auto; /* Add scrollbar when content overflows */
+}
+
+/* Toggle button styles */
+.sidebar-toggle {
+  cursor: pointer;
+  font-size: 12px;
+  left: 20px;
+  position: fixed;
+  top: 100px;
+}
+
+.dropdown-menus > li,
+ul{
+  cursor:pointer;
+  list-style: none;
+  padding: 20px 5px 5px 20px;
+}
+
+/* .dropdown{
+  padding: 20px 5px 300px 5px;
+
+} */
+#checkbox {
+  margin: 0px 10px 0 0;
+}
