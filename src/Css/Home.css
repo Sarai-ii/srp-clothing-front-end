@@ -1,0 +1,134 @@
+* {
+    background-color:white ;
+    font-family: 'Bastia, serif';
+    color: #333;
+}
+
+body {
+    margin: 0;
+    font-size: 1em;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+button, html, input, select, textarea {
+    font-family: Bastia,Arial,sans-serif;
+    color: #333;
+}
+
+html {
+    font-size: 86%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+::selection {
+    background: #333;
+    color: #fff;
+    text-shadow: none;
+}
+
+.thumbnail-image {
+    width: 180px; 
+    height: auto; /* Maintain aspect ratio */
+    margin: 5px; /* Adds spacing between images */
+    cursor: pointer;
+}
+
+.trending-images {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+  
+.trending-image {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+  
+h2 {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Borrowed from other sites */
+  
+.qhMT8.qhMT8, .qhMT8.qhMT8 p {
+    font-size: 21px;
+}
+.qhMT8.qhMT8 {
+    line-height: 1.14;
+    margin: 0;
+}
+.qhMT8.bLL0c {
+    letter-spacing: 0.2em;
+}
+.PiUHT h2, .PiUHT h3, .PiUHT h4 {
+    margin-bottom: 0;
+    position: relative;
+}
+.qhMT8, .qhMT8 h1, .qhMT8 h2, .qhMT8 h3, .qhMT8 h4, .qhMT8 h5, .qhMT8 h6 {
+    font-weight: 400;
+}
+.Ouhbi, .Ouhbi a {
+    color: #191a1b;
+}
+user agent stylesheet
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.JDS6c {
+    text-align: center;
+}
+._UPxR.CjGwk, .ykD2I>.qLcei>.CjGwk {
+    --column-gap: 0px;
+}
+@media only screen and (max-width: 736px)
+.CjGwk, .qLcei, .Xeff2 {
+    --column-gap: 20px;
+}
+.z0tVk {
+    --column-span: 12;
+}
+.CjGwk {
+    --column-gap: 30px;
+    box-sizing: border-box;
+    width: calc(100% / (var(--grid-columns) / var(--column-span)) - var(--column-gap));
+    margin-left: calc(var(--column-gap) / 2);
+    margin-right: calc(var(--column-gap) / 2);
+    flex: 0 0 auto;
+    position: relative;
+}
+.Qn6Mn {
+    --grid-columns: 12;
+}
+.qLcei {
+    --column-gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(var(--column-gap) / -2);
+    margin-right: calc(var(--column-gap) / -2);
+    position: relative;
+}
+.Xeff2 {
+    --column-gap: 30px;
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1660px;
+    padding-left: var(--column-gap);
+    padding-right: var(--column-gap);
+}
+
