@@ -26,7 +26,7 @@
 /* Toggle button styles */
 .sidebar-toggle {
   cursor: pointer;
-  color: azure;
+  color: rgb(0, 0, 0);
   font-size: 12px;
   left: 100%;
   position: relative;

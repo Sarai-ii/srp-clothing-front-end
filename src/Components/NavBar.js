@@ -32,12 +32,11 @@ export default function NavBar() {
         </button>
          {/* NAV SEARCH BAR */}
         <div className="box">
-                <input className="box-form" type="search" name="search" />
-                <svg width="26" height="25" fill="white" className="bi bi-search search-icon" viewBox="0 0 16 24">
+                <svg width="26" height="25" fill="BLACK" className="bi bi-search search-icon" viewBox="0 -2 15 23">
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                 </svg>
+                <input className="box-form" type="search" name="search" placeholder="Search" />
         </div>
-
         {/* DROP DOWN MENU FOR CATEGORIES */}
         <div
           className={`collapse navbar-collapse ${
@@ -71,7 +70,7 @@ export default function NavBar() {
                 <li>
                   <Link
                     className="dropdown-item"
-                    to="/clothes"
+                    to="/womens"
                     onClick={closeDropdown}
                   >
                     Women *Beta*
@@ -80,7 +79,7 @@ export default function NavBar() {
                 <li>
                   <Link
                     className="dropdown-item"
-                    to="/clothes"
+                    to="/mens"
                     onClick={closeDropdown}
                   >
                     Men *Beta*
