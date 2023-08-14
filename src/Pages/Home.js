@@ -78,7 +78,7 @@ export default function Home() {
         <div className="Home">
             <main id="layer-0" className="vYF33" style={mainStyle}>
              <h2 style={headingStyle}>Welcome to Extravaganza!</h2>
-                <button className='all-items-btn' style={buttonStyle} onClick = {() => navigate("/clothing")}>
+                <button className='all-items-btn' style={buttonStyle} onClick = {() => navigate("/new-this-season")}>
                     See All Clothing
                 </button>
                 <p></p>
@@ -86,7 +86,7 @@ export default function Home() {
                     See All Men's Clothing
                 </button>
                 <p></p>
-                <button className="womens-clothes-btn" style={buttonStyle} onClick = {() => navigate('clothing/men')}>
+                <button className="womens-clothes-btn" style={buttonStyle} onClick = {() => navigate('clothing/women')}>
                     See All Women's Clothing
                 </button>
             <section id="layer-0" className="vYF33" style={vYF33Style}>
