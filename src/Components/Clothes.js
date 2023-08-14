@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import Clothing from "./Clothing";
 // import Images from "./Images";
 import SideBar from "./Sidebar"
+// import Women from "../Pages/Women"
 // STYLING
 import "../Css/New-This-Season.css"
 //DATABASE
@@ -31,7 +32,7 @@ export default function Clothes({images}) {
           clothing={clothing}
           />        
         <section className="section">
-
+          {/* <Women clothing={clothing}/> */}
         </section>
         <main className="main-section">
           <h5>New This Season</h5>

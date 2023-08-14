@@ -14,10 +14,6 @@ main {
   flex-grow: 1; /* Allow the main content to grow and push the footer down */
 }
 
-
-
-
-
 /* .App {
   text-align: center;
 }

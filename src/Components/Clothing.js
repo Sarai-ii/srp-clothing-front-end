@@ -7,12 +7,11 @@ export default function Clothing({ clothes }) {
   return (
     <div>
       <main className="card">
-        <img src="../Photos/ankle-boots.jpg" className="card-img-top" alt="Item"/>
+        <img src={clothes.image} className="card-img-top" alt="Item"/>
         <Link to={`/clothes/${clothes.clothing_id}`}>{clothes.name}</Link>
         <div className="card-body">
           <p className="card-text">
-            
-          <Link to={`/clothes/${clothes.clothing_id}`}>{clothes.price}</Link>          
+          <Link to={`/clothes/${clothes.clothing_id}`}>{clothes.cost}</Link>          
           </p>
         </div>
       </main>
