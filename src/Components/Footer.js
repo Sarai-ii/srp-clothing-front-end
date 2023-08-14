@@ -6,6 +6,7 @@ import "./Footer.css";
 export default function Footer() {
     const footerStyle1 = {
         backgroundColor: "#ECEFF1",
+        width: '100%',
     };
     const footerStyle2 = {
         backgroundColor: "#21D192",
@@ -20,16 +21,10 @@ export default function Footer() {
         marginTop: "auto",  //this is the thing that pushes the footer to the bottom 
     };
 
-    // const columnStyle = {
-    //     marginLeft: "0", // Remove left margin
-    //     marginRight: "0", // Remove right margin
-    //     padding: "0 15px", // Adjust padding for a more compact layout
-    //     width: "100%", // Make the column take up the full width
-    // };
 
     return (
-        <div className="Footer container" >
-            <footer className="text-center text-lg-start text-dark" style={footerStyle1}>
+        <div className="Footer" >
+            <footer className="text-center text-lg-start text-dark" style={{footerStyle1, width: '100%' }}>
 
 {/* SECTION one */} 
                 <section className="d-flex justify-content-between p-3 text-purple mt-4" style={footerStyle2} >
@@ -45,7 +40,7 @@ export default function Footer() {
 
 {/* SECTION two - LINKS */}
                 <section className="Links">
-                    <div className="container text-center text-md-start mt-2">
+                    <div className=" text-center text-md-start mt-2">
 {/* GRID ROW */}
                         <div className="row mt-3">
 {/* GRID COLUMN One */}
@@ -92,3 +87,16 @@ export default function Footer() {
         </div>
     )
 }
+
+
+
+/*
+
+    // const columnStyle = {
+    //     marginLeft: "0", // Remove left margin
+    //     marginRight: "0", // Remove right margin
+    //     padding: "0 15px", // Adjust padding for a more compact layout
+    //     width: "100%", // Make the column take up the full width
+    // };
+
+    */
