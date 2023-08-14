@@ -78,7 +78,8 @@ export default function Home() {
         <div className="Home">
             <main id="layer-0" className="vYF33" style={mainStyle}>
              <h2 style={headingStyle}>Welcome to Extravaganza!</h2>
-                <button className='all-items-btn' style={buttonStyle} onClick = {() => navigate( "/new-this-season")}>
+                <button className='all-items-btn' style={buttonStyle} onClick = {() => navigate("/new-this-season")}>
+
                     See All Clothing
                 </button>
                 <p></p>
