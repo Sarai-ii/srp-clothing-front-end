@@ -56,7 +56,7 @@ function NewClothing() {
     }, [id, navigate]);
 
     return (
-        <div className="New">   
+        <div className="New New2" style={{ backgroundColor: "#f0dada" }}>   
             <form onSubmit={handleSubmit} className="vertical-form">
                 <div className="form-group">
                     <fieldset>
@@ -149,11 +149,11 @@ function NewClothing() {
                             required
                             />
                             <br />
-                            <input type="submit" />
+                            <button type="submit" className="rounded-button">Add Item to Database</button>
                         </fieldset>
                     </div>
             </form>
-            <Link to={`/new-this-season`}><button>Nevermind!</button></Link>
+            <Link to={`/new-this-season`}><button className="rounded-button-smaller">Never Mind!</button></Link>
         </div>
     );
 }

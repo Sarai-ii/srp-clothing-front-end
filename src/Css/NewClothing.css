@@ -1,5 +1,12 @@
 .New{
     margin-left: 30px;
+
+}
+
+.New2{
+    margin-left: 30px;
+    margin-right: 350px;
+    padding-bottom: 20px;
 }
 
 legend {
@@ -25,16 +32,35 @@ legend {
 
 /* Add margin-bottom to form groups for spacing between each group */
 .form-group {
-    margin-bottom: 20px; /* Adjust the margin as needed */
+    margin-bottom: 20px; 
 }
-
 
 /* Wider input for input field */
 .wide-input {
-    width: 300px; /* Adjust the width as needed */
+    width: 300px;
 }
 
 /* Narrower input for input field*/
 .narrow-input {
-    width: 70px; /* Adjust the width as needed */
+    width: 70px; 
+}
+
+.rounded-button {
+    border-radius: 30px; 
+    background-color: #D29292; 
+    color: black;
+    padding: 20px; 
+    border: none; 
+    cursor: pointer;
+}
+
+
+.rounded-button-smaller {
+    border-radius: 8px; 
+    background-color: black; 
+    color: white;
+    padding: 8px 10px; 
+    margin: 10px;
+    border: none;
+    cursor: pointer; 
 }
