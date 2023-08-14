@@ -83,11 +83,11 @@ export default function Home() {
                     See All Clothing
                 </button>
                 <p></p>
-                <button className="mens-clothes-btn" style={buttonStyle} onClick = {() => navigate('clothing/men')}>
+                <button className="mens-clothes-btn" style={buttonStyle} onClick = {() => navigate('mens')}>
                     See All Men's Clothing
                 </button>
                 <p></p>
-                <button className="womens-clothes-btn" style={buttonStyle} onClick = {() => navigate('clothing/women')}>
+                <button className="womens-clothes-btn" style={buttonStyle} onClick = {() => navigate('womens')}>
                     See All Women's Clothing
                 </button>
             <section id="layer-0" className="vYF33" style={vYF33Style}>

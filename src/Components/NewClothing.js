@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
+import "../Css/NewClothing.css";
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -35,10 +36,12 @@ function NewClothing() {
         setClothes({ ...clothes, [event.target.id]: event.target.value });
     };
 
-    const handleCheckboxChange = () => {
-        setClothes({ ...clothes, in_stock: !clothes.in_stock});
-        setClothes({ ...clothes, handwash_only: !clothes.handwash_only});
+
+    const handleCheckboxChange = (field) => {
+        setClothes({ ...clothes, [field]: !clothes[field] });
     };
+    
+
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -53,87 +56,104 @@ function NewClothing() {
     }, [id, navigate]);
 
     return (
-        <div className="New">   
-            <form onSubmit={handleSubmit}>
-                <label htmlFor="name">Name of Clothing:</label>
-                <input
-                id="name"
-                type="text"
-                name="name"
-                value={clothes.name}
-                placeholder=""
-                onChange={handleTextChange}
-                required
-                />
-                <label htmlFor="category">Category:</label>
-                <input
-                id="category"
-                type="text"
-                name="category"
-                value={clothes.category}
-                placeholder="Clothing Type"
-                onChange={handleTextChange}
-                />
-                <label htmlFor="cost">Cost:</label>
-                <input
-                id="cost"
-                type="number"
-                value={clothes.cost}
-                placeholder=""
-                onChange={handleTextChange}
-                required
-                />
-                <label htmlFor="in_stock">Stock:</label>
-                <input
-                id="in_stock"
-                type="checkbox"
-                onChange={handleCheckboxChange}
-                checked={clothes.in_stock}
-                />
-                <label htmlFor="country">Manufactured Country:</label>
-                <input
-                id="country"
-                type="text"
-                value={clothes.country}
-                placeholder=""
-                onChange={handleTextChange}
-                />
-                <label htmlFor="handwash_only">HandWash Only:</label>
-                <input
-                id="handwash_only"
-                type="checkbox"
-                onChange={handleCheckboxChange}
-                checked={clothes.handwash_only}
-                />
-                <label htmlFor="material">Material:</label>
-                <input
-                id="material"
-                type="text"
-                value={clothes.material}
-                placeholder=""
-                onChange={handleTextChange}
-                />
-                <label htmlFor="created_on">Manufactured Date:</label>
-                <input
-                id="created_on"
-                type="text"
-                value={clothes.created_on}
-                placeholder=""
-                onChange={handleTextChange}
-                />
-                <label htmlFor="username">Username:</label>
-                <input
-                id="username"
-                type="text"
-                value={clothes.username}
-                placeholder=""
-                onChange={handleTextChange}
-                required
-                />
-                <br />
-                <input type="submit" />
+        <div className="New New2" style={{ backgroundColor: "#f0dada" }}>   
+            <form onSubmit={handleSubmit} className="vertical-form">
+                <div className="form-group">
+                    <fieldset>
+                        <legend>Basic Information</legend>
+                            <label htmlFor="name">Name of Clothing:</label>
+                            <input
+                            id="name"
+                            type="text"
+                            name="name"
+                            value={clothes.name}
+                            placeholder="E.g., Elegant Brown Loafers"
+                            onChange={handleTextChange}
+                            className="wide-input" 
+                            required
+                            />
+                            <p></p>
+                            <label htmlFor="category">Category:</label>
+                            <input
+                            id="category"
+                            type="text"
+                            name="category"
+                            value={clothes.category}
+                            placeholder="Clothing Type"
+                            onChange={handleTextChange}
+                            />
+                            <p></p>
+                            <label htmlFor="cost">Cost:</label>
+                            <input
+                            id="cost"
+                            type="number"
+                            value={clothes.cost}
+                            placeholder=""
+                            onChange={handleTextChange}
+                            className="narrow-input" 
+                            required
+                            />
+                    </fieldset>
+                    <fieldset>
+                        <legend>Additional Details</legend>
+                            <label htmlFor="in_stock">In Stock?</label>
+                            <input
+                            id="in_stock"
+                            type="checkbox"
+                            onChange={() => handleCheckboxChange("in_stock")}
+                            checked={clothes.in_stock}
+                            />
+                            <p> </p>
+                            <label htmlFor="country">Country of Manufacture:</label>
+                            <input
+                            id="country"
+                            type="text"
+                            value={clothes.country}
+                            placeholder=""
+                            onChange={handleTextChange}
+                            />
+                            <p> </p>
+                            <label htmlFor="handwash_only">HandWash Only?</label>
+                            <input
+                            id="handwash_only"
+                            type="checkbox"
+                            onChange={() => handleCheckboxChange("handwash_only")}
+                            checked={clothes.handwash_only}
+                            />
+                            <p> </p>
+                            <label htmlFor="material">Material:</label>
+                            <input
+                            id="material"
+                            type="text"
+                            value={clothes.material}
+                            placeholder="E.g., cotton, nylon, silk"
+                            onChange={handleTextChange}
+                            />
+                            <p> </p>
+                            <label htmlFor="created_on">Date entered in database:</label>
+                            <input
+                            id="created_on"
+                            type="date"
+                            value={clothes.created_on}
+                            placeholder=""
+                            onChange={handleTextChange}
+                            />
+                            <p> </p>
+                            <label htmlFor="username">Username:</label>
+                            <input
+                            id="username"
+                            type="text"
+                            value={clothes.username}
+                            placeholder=""
+                            onChange={handleTextChange}
+                            required
+                            />
+                            <br />
+                            <button type="submit" className="rounded-button">Add Item to Database</button>
+                        </fieldset>
+                    </div>
             </form>
-            <Link to={`/new-this-season`}><button>Nevermind!</button></Link>
+            <Link to={`/new-this-season`}><button className="rounded-button-smaller">Never Mind!</button></Link>
         </div>
     );
 }
