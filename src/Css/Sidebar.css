@@ -27,8 +27,9 @@
 .sidebar-toggle {
   cursor: pointer;
   color: rgb(0, 0, 0);
-  font-size: 12px;
-  left: 100%;
+  font-size: 13px;
+  font-weight: bold;
+  left: 110%;
   position: relative;
   top: 10px;
   z-index: 1000; 

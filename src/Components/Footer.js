@@ -1,7 +1,5 @@
 import React from "react";
-import "./Footer.css";
-
-
+import "../Css/Footer.css"
 
 export default function Footer() {
     const footerStyle1 = {
@@ -46,7 +44,7 @@ export default function Footer() {
 {/* GRID COLUMN One */}
                             <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-2">  {/* Adjusted mb-4 to mb-2 */}
 {/* CONTENT */}
-                                <h6 className="text-uppercase fw-bold mb-2">Extravaganza</h6>
+                                <h6 className="text-uppercase fw-bold mb-2">Sen Extravaganza</h6>
                                 <hr className="mt-0 d-inline-block mx-auto" style={footerStyle3}/>
                                 <p> The shopping experience you deserve </p>
                             </div>
@@ -55,9 +53,9 @@ export default function Footer() {
                                         {/* <!-- Links --> */}
                                 <h6 className="text-uppercase fw-bold mb-2">Categories</h6>
                                 <hr className="mt-0 d-inline-block mx-auto" style= {footerStyle3}/>
-                                <p><a href="#!" className="text-dark">Women</a></p>
-                                <p><a href="#!" className="text-dark">Men</a></p>
-                                <p><a href="#!" className="text-dark">Accessories</a></p>
+                                <p><a href="../Pages/Women.js" className="text-dark">Women</a></p>
+                                <p><a href="../Pages/Men.js" className="text-dark">Men</a></p>
+                                <p><a href="../Components/Clothes.js" className="text-dark">Accessories</a></p>
                             </div>
 {/* GRID COLUMN Three */}
                             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-2"> {/* Adjusted mb-4 to mb-2 */}
@@ -73,7 +71,7 @@ export default function Footer() {
 {/* <!-- Links --> */}
                                 <h6 className="text-uppercase fw-bold mb-2">Contact</h6>
                                 <hr className="mt-0 d-inline-block mx-auto" style= {footerStyle3} />
-                                    <p><i className="mr-3"></i> info@example.com</p>
+                                    <p><i className="mr-3"></i> info@sen-extravaganza.com</p>
                             </div>
                         </div>
                     </div>
