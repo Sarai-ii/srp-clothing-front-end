@@ -13,7 +13,6 @@ export default function Home() {
 
 
       const headingStyle = {
-        color: 'rgb(33, 209, 146)',
         padding: '10px',
         top: '1%',
         left: '4%',
@@ -25,7 +24,7 @@ export default function Home() {
       };
 
       const buttonStyle = {
-        backgroundColor: 'rgb(33, 209, 146)',
+        backgroundColor: '#f0dada',
         padding: '15px 30px', // this increased padding is for larger buttons
         margin: '10px 0', // this adds margin between buttons
         marginLeft: '50px',
@@ -34,6 +33,7 @@ export default function Home() {
         width: '300px',
         top: '40%',
         fontSize: '18px',
+        border: 'none'
       }
 
       const mainStyle = {
@@ -79,6 +79,7 @@ export default function Home() {
             <main id="layer-0" className="vYF33" style={mainStyle}>
              <h2 style={headingStyle}>Welcome to Extravaganza!</h2>
                 <button className='all-items-btn' style={buttonStyle} onClick = {() => navigate("/new-this-season")}>
+
                     See All Clothing
                 </button>
                 <p></p>
