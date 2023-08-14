@@ -19,7 +19,7 @@ export default function Women() {
       <ul>
         {clothing.map((clothes) => {
           // Check if the category is "womens"
-          if (clothes.category.includes("womens")) {
+          if (clothes.category.includes("women")) {
             return (
                 <div className="card">
                     <div className="card-body">

@@ -63,38 +63,23 @@ export default function ToggleableSidebar(clothing) {
         <div className="sidebar-content">
             {/* Sidebar content */}
             <ul className="dropdown-menus">
-                {/* <span style={{fontSize: "100px"}}>&#8675;</span> */}
-                <li onClick={toggleProductType}>Product Type
-                    <svg xmlns="" width="16" height="16" fill="currentColor" className="bi bi-caret-down-fill arrow" viewBox="0 0 16 16">
-                        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-                    </svg> 
-                </li>
-                {showProductType && (
-                    <div className="dropdown">
-                        <ul>
-                            <li>
-                                <input
-                                type="checkbox"
-                                id="checkbox"
-                                />
-                                Accessories
-                            </li>
-
-
-
-
-
-
-
-                            
-                        </ul>
-                    </div>
-                )}
+                <p>Filtered by: </p>
+                <button className='btn btn-default'>Clear all</button>
+                <hr />
+                <p>
+                <strong>Free Pickup</strong>
+                <br />
+                Set your location to see what’s available near you.
+                <br />
+                <Link to={`/`}>Set location</Link>
+                </p>
+                <hr />
                 <li onClick={toggleDropdown}>Price 
                     <svg xmlns="" width="16" height="16" fill="currentColor" className="bi bi-caret-down-fill arrow" viewBox="0 0 16 16">
                         <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
                     </svg> 
                 </li>
+
                     {showDropdownPrice && (
                         <div className="price-dropdown">
                             <ul>
@@ -178,11 +163,13 @@ export default function ToggleableSidebar(clothing) {
                             </ul>
                         </div>
                     )}
+                <hr />
                 <li onClick={toggleMaterials}>Material 
                     <svg xmlns="" width="16" height="16" fill="currentColor" className="bi bi-caret-down-fill arrow" viewBox="0 0 16 16">
                         <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
                     </svg> 
                 </li>
+
                     {showMaterials && (
                         <div className="materials-dropdown">
                             <ul>
@@ -287,11 +274,13 @@ export default function ToggleableSidebar(clothing) {
                             </ul>
                         </div>
                     )}
+                    <hr />
                 <li onClick={toggleProductType}>Product Type
                     <svg xmlns="" width="16" height="16" fill="currentColor" className="bi bi-caret-down-fill arrow" viewBox="0 0 16 16">
                         <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
                     </svg> 
                 </li>
+
                     {showProductType && (
                         <div className="dropdown">
                             <ul>
@@ -355,6 +344,7 @@ export default function ToggleableSidebar(clothing) {
                             </ul>
                         </div>
                     )}
+                <hr />
             </ul>
         </div>
     </div>
