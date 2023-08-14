@@ -8,7 +8,7 @@ const API = process.env.REACT_APP_API_URL;
 function ClothingDetails() {
   const [clothing, setClothing] = useState([]);
   const [isConfirmationVisible, setIsConfirmationVisible] = useState(false);
-  const [showProductDetails, setShowProductDetails] = useState(false);
+  const [showProductDetails, setShowProductDetails] = useState(true);
   let { id } = useParams();
   let navigate = useNavigate();
 

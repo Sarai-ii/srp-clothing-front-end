@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link} from 'react-router-dom';
 import '../Css/Sidebar.css';
 
@@ -61,7 +61,7 @@ export default function ToggleableSidebar(clothing) {
         <div className="sidebar-toggle" onClick={toggleSidebar}>
             Hover For A More Detailed 
             <br/>Shopping Experience 
-            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="black" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+            <svg xmlns="" width="26" height="26" fill="black" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8Zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5Z"/>
             </svg>
         </div>
