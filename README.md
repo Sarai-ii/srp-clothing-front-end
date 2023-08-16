@@ -1,6 +1,11 @@
-# Extravaganza 
+# [SEN Extravaganza](https://sen-extravaganza-react.onrender.com/)
 
-Extravaganza was created as the Single Resource Pair Project requirement for the the Pursuit Fellowship.
+Clothing stores abound, but if you want to own one, how can you populate what goes in your store? Well, SEN Extravaganza is your answer.
+
+SEN Extravaganza was created as the Single Resource Pair Project requirement for the the Pursuit Fellowship. It was deployed using Render and can be found [here](https://sen-extravaganza-react.onrender.com/).
+
+[The Front End (you are here)](https://github.com/Sarai-ii/srp-clothing-front-end)
+[The Back End](https://github.com/JenniferEinstein/srp-clothing-back-end)
 
 | Developers |
 | :--------------: |
@@ -37,17 +42,12 @@ To Start Server: `npm start`
 
 
 
-### Delete Pop-up Modal
+### Delete Pop-up Modal Window
 
 To ensure that the user does not accidentally delete an item in the database, this pop-up asks the user to confirm their deletion request.
-<!-- ![delete](./src/Assets/delete-modal.png) -->
 
 
-## Deployment
 
-This project was deployed using Render.
-
-## Challenges
 
 ## Technologies Used
 
@@ -60,9 +60,6 @@ This project was deployed using Render.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Project Links
-
-[The Backend of the Extravaganza](https://github.com/JenniferEinstein/srp-clothing-back-end)
 
 <!-- ### Landing Page
 
